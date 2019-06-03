@@ -10,6 +10,6 @@ pr:
 jobs:
 - job: Build
   pool:
-    vm-image: ubuntu-latest
+    vm-image: vs2019-win2019
   steps:
   - script: echo 'hello servicea'
