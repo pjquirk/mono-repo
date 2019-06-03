@@ -1,0 +1,14 @@
+pr:
+  branches:
+    include:
+      - master
+  paths:
+    include:
+      - serviceb/*
+
+jobs:
+- job: Build
+  pool:
+    vm-image: ubuntu-latest
+  steps:
+  - script: echo 'hello serviceb'

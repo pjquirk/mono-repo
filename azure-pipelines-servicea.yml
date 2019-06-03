@@ -1,0 +1,15 @@
+pr:
+ branches:
+  include:
+    - master
+ paths:
+   include:
+     - servicea/*
+
+
+jobs:
+- job: Build
+  pool:
+    vm-image: ubuntu-latest
+  steps:
+  - script: echo 'hello servicea'
