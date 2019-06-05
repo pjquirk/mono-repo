@@ -10,7 +10,6 @@ pr:
 
 jobs:
 - job: Build
-  pool:
-    vm-image: windows-2019
+  pool: Default
   steps:
   - script: echo 'hello serviceb'
